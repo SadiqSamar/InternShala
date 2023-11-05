@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Assignment.css">
+  <title>Custom Form Builder</title>
+</head>
+<body>
+  <div id="form-builder">
+    <h2>Form Editor</h2>
+    <div id="form-editor">
+      <div class="question">
+        <label>Multiple Choice Question:</label>
+        <input type="text" name="mc_question" placeholder="Question text" required>
+        <input type="radio" name="mc_answer" value="Option 1"> Option 1
+        <input type="radio" name="mc_answer" value="Option 2"> Option 2
+        <input type="radio" name="mc_answer" value="Option 3"> Option 3
+      </div>
+
+      <div class="question">
+        <label>Text Input Question:</label>
+        <input type="text" name="text_question" placeholder="Question text" required>
+      </div>
+
+      <div class="question">
+        <label>Checkbox Question:</label>
+        <input type="text" name="checkbox_question" placeholder="Question text" required>
+        <input type="checkbox" name="checkbox_answer[]" value="Option 1"> Option 1
+        <input type="checkbox" name="checkbox_answer[]" value="Option 2"> Option 2
+        <input type="checkbox" name="checkbox_answer[]" value="Option 3"> Option 3
+      </div>
+    </div>
+    <button id="save-button">Save Form</button>
+  </div>
+
+  <div id="form-filler" style="display: none;">
+    <h2>Form Filler</h2>
+    <form id="filled-form">
+      <!-- Form questions will be displayed here for filling -->
+    </form>
+    <button id="submit-response-button">Submit Response</button>
+  </div>
+
+  <script src="Assignment.js"></script>
+</body>
+</html>
